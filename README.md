@@ -3,7 +3,7 @@
 * Author: Dave Coleman <davetcoleman@gmail.com>
 * License: GNU General Public License, version 3 (GPL-3.0)
 
-Example robots and code for interfacing Gazebo with ROS
+Example robots and code for interfacing Gazebo with ROS noetic
 
 ## Tutorials
 
