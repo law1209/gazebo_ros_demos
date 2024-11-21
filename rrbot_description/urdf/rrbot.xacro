@@ -30,14 +30,14 @@
     <collision>
       <origin xyz="0 0 ${height1/2}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height1}"/>
+	       <box size="${width} ${width} ${height1}"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 ${height1/2}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height1}"/>
+	       <box size="${width} ${width} ${height1}"/>
       </geometry>
       <material name="orange"/>
     </visual>
@@ -46,9 +46,9 @@
       <origin xyz="0 0 ${height1/2}" rpy="0 0 0"/>
       <mass value="${mass}"/>
       <inertia
-	  ixx="${mass / 12.0 * (width*width + height1*height1)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass / 12.0 * (height1*height1 + width*width)}" iyz="0.0"
-	  izz="${mass / 12.0 * (width*width + width*width)}"/>
+        ixx="${mass / 12.0 * (width*width + height1*height1)}" ixy="0.0" ixz="0.0"
+	      iyy="${mass / 12.0 * (height1*height1 + width*width)}" iyz="0.0"
+	      izz="${mass / 12.0 * (width*width + width*width)}"/>
     </inertial>
   </link>
 
@@ -65,14 +65,14 @@
     <collision>
       <origin xyz="0 0 ${height2/2 - axel_offset}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height2}"/>
+	      <box size="${width} ${width} ${height2}"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 ${height2/2 - axel_offset}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height2}"/>
+	      <box size="${width} ${width} ${height2}"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -100,14 +100,14 @@
     <collision>
       <origin xyz="0 0 ${height3/2 - axel_offset}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height3}"/>
+	      <box size="${width} ${width} ${height3}"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 ${height3/2 - axel_offset}" rpy="0 0 0"/>
       <geometry>
-	<box size="${width} ${width} ${height3}"/>
+	      <box size="${width} ${width} ${height3}"/>
       </geometry>
       <material name="orange"/>
     </visual>
@@ -116,9 +116,9 @@
       <origin xyz="0 0 ${height3/2 - axel_offset}" rpy="0 0 0"/>
       <mass value="${mass}"/>
       <inertia
-	  ixx="${mass / 12.0 * (width*width + height3*height3)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass / 12.0 * (height3*height3 + width*width)}" iyz="0.0"
-	  izz="${mass / 12.0 * (width*width + width*width)}"/>
+	      ixx="${mass / 12.0 * (width*width + height3*height3)}" ixy="0.0" ixz="0.0"
+	      iyy="${mass / 12.0 * (height3*height3 + width*width)}" iyz="0.0"
+	      izz="${mass / 12.0 * (width*width + width*width)}"/>
     </inertial>
   </link>
 
@@ -164,14 +164,14 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	<box size="${camera_link} ${camera_link} ${camera_link}"/>
+	      <box size="${camera_link} ${camera_link} ${camera_link}"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	<box size="${camera_link} ${camera_link} ${camera_link}"/>
+	      <box size="${camera_link} ${camera_link} ${camera_link}"/>
       </geometry>
       <material name="red"/>
     </visual>
