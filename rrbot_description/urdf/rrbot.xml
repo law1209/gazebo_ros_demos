@@ -13,11 +13,15 @@
   <!-- Size of square 'camera' box -->
   <!-- Space btw top of beam and the each joint -->
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+
+   <!-- gazebo plugin -->
   <gazebo>
     <plugin filename="libgazebo_ros_control.so" name="ros_control">
       <robotNamespace>/rrbot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>  <!-- can delete -->
     </plugin>
   </gazebo>
+
   <gazebo reference="link1">
     <material>Gazebo/Orange</material>
   </gazebo>
@@ -303,5 +307,5 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  
+
 </robot>
